@@ -1,0 +1,340 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preliminary Examination CSDC105</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+        *{
+            margin: 0;
+        }
+        .TOPPAGE{
+            background-image: url(https://images.unsplash.com/photo-1431456702877-ffb4c72ebf43);
+            background-repeat: no-repeat; 
+            background-size: cover; background-color: rgba(0, 0, 0, 0.6); background-blend-mode: darken;
+            height: 100vh;background-attachment: fixed;
+        }
+        .BOTTOMPAGE{
+            background-image: url(https://images.unsplash.com/photo-1736967439874-d0c856eacda1);
+            background-repeat: no-repeat;
+            height: 100vh; background-attachment: fixed;
+            background-size: cover; background-color: rgba(0, 0, 0, 0.6); background-blend-mode: darken;
+        }
+        .DOWNPAGE{
+            background-image: url(https://images.unsplash.com/photo-1602131133761-c698725d1d0b);
+            background-repeat: no-repeat;
+            height: 100vh; background-attachment: fixed;
+            background-size: cover; background-color: rgba(0, 0, 0, 0.6); background-blend-mode: darken;
+        }
+        .PROFILEPIC {
+            border-radius: 20%;
+            z-index: 2;
+            width: 13vw;
+            margin-top: 50px; margin-left: 40vh;
+            filter: drop-shadow(0px 0px 6px #0000008a);
+        }
+        .PROFILE {
+            background: rgb(254,254,254);
+            background: radial-gradient(circle, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 0.651) 100%);
+            text-align: center;
+            width: 20vw ; height: 10vw;
+            margin-left: 33vh; margin-top: -18vh;
+            border-radius: 5%; padding-top: 20vh;
+        }
+        .BASICINFOREC {
+            background: rgb(185,185,185);
+            background: linear-gradient(113deg, rgba(185,185,185,1) 0%, rgba(254,254,254,1) 100%);
+            filter: drop-shadow(0px 0px 100px #a7a7a7b4);
+            width: 50vw; height: 100vh;
+            max-height: 18.8vw;
+            border-radius: 25px;
+            margin-left: 80vh; margin-top: -41vh;
+            text-align: left; padding-top: 3vh; padding-left: 3vh;
+            line-height: 4vh;
+        }
+        .Statement {
+            background: rgb(185,185,185);
+            background: linear-gradient(113deg, rgba(185,185,185,1) 0%, rgba(254,254,254,1) 100%);
+            filter: drop-shadow(0px 0px 100px #a7a7a7b4);
+            width: 148vh; height: 100vh;
+            max-height: fit-content;
+            border-radius: 25px;
+            margin-left: 33vh; margin-top: 6.1vh;
+            text-align: left;  padding-top: 1vh; padding-left: 3vh; padding-right: 3vh;
+        }
+
+        .Raleway {
+            font-family: "Raleway", serif;
+        }
+        .BASICINFOREC h1{
+            font-size: 2rem;
+            font-weight: normal;
+            line-height: 30px;
+        }
+        .PROFILE h2{
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        .BASICINFOREC article{
+            line-height: 3;
+            font-size: 1.1rem;
+            padding-left: 6vh;
+        }
+        .Statement article{
+            font-size: 1.5rem;
+            font-weight: normal;
+            line-height: 2.5rem;
+        }
+        .Statement h1{
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+        
+        .LINKRECT {
+            background-color:  rgba(255, 255, 255, 0.637); background-blend-mode: lighten;
+            width: fit-content; max-width: fit-content; max-height: fit-content;
+            border-radius: 25px;
+            filter: drop-shadow(0px 0px 6px #0000008a);
+            margin-top: 84vh; margin-left: 50vh;
+            position: absolute;
+            padding-right: 11vh;
+        }
+        .LINKLABELS{
+            font-family: "Roboto", serif;
+            font-size: large;
+            margin-top: 70; margin-left: 168;
+        }
+        .facebooklogo{
+            width: 70; height: 70;
+            margin-left: 10vh; margin-top: 10;
+        }
+        .instagramlogo{
+            width: 70; height: 70;
+            margin-left: 10vh; margin-top: 10;
+        }
+        .unsplashlogo{
+            width: 70; height: 70;
+            margin-left: 10vh; margin-top: 10;
+        }
+        .githublogo{
+            width: 70; height: 70;
+            margin-left: 10vh; margin-top: 10;
+        }
+        .linkedinlogo{
+            width: 70; height: 70;
+            margin-left: 10vh; margin-top: 10;
+        }
+        .EDUCBG{
+            background: rgb(254,254,254);
+            background: radial-gradient(circle, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 0.651) 100%);
+            position: absolute;
+            z-index: 0;
+            border-radius: 15px;
+            margin-left: 40px; margin-top: 5vh;
+            width: 75vh; height: 30vh;
+            filter: drop-shadow(0px 0px 6px #000000cb);
+        }
+        .EDUCBG h1{
+            font-family: "Raleway", serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        .sjslogo{
+            width: 200px;
+            z-index: 2;
+            filter: drop-shadow(0px 0px 6px #56565663);
+            float: left;
+            margin-left: 9vh;
+        }
+        .adnulogo{
+            width: 180px;
+            z-index: 2;
+            filter: drop-shadow(0px 0px 6px #56565663);
+            margin-left: 15vh; margin-top: 1vh;
+            position: absolute;
+        }
+        .table{
+            background: rgb(254,254,254);
+            background: radial-gradient(circle, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 0.651) 100%);
+            width: 100vh;
+            margin-left: 87vh; margin-top: -3vh;
+        }
+        .table table, th,td{
+            border:2px solid rgb(110, 110, 110);
+            text-align: center;
+            font-family: "Raleway",serif;
+            font-size: 1rem;
+            line-height: 6vh;
+        }
+        .Forcepfp{
+            width: 13vw;
+            border-radius: 50%;
+            border: 4px solid grey;
+            float: left;
+            filter: drop-shadow(0px 0px 6px #56565656);
+        }
+        .Forcecontainer{
+            background-color:  rgb(255, 255, 255); background-blend-mode: lighten;
+            width: 500vh; height: 33vh;
+            max-width: 100vh;
+            margin-top: 53vh; margin-left: 50vh; border-radius: 55px; position: absolute; 
+            padding-top: 3vh; padding-left: 3vh; padding-right: 3vh;
+            filter: drop-shadow(0px 0px 6px #000000cd);
+        }
+        .Forcecontainer h1{
+            font-family: "Raleway",serif;
+            font-weight: normal;
+            text-align: center;
+            padding-bottom: 1vh;
+        }
+        .Forcecontainer p{
+            font-family: "raleway", serif;
+            font-size: 1.4rem;
+            font-weight: normal;
+            line-height: 5vh;
+        }
+        .workexp{
+            background: rgb(254,254,254);
+            background: radial-gradient(circle, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 0.651) 100%);
+            position: absolute;
+            z-index: 0;
+            border-radius: 15px;
+            margin-left: 34.5vh; margin-top: 15vh;
+            width: 145vh; height: 45vh;
+            filter: drop-shadow(0px 0px 6px #000000cb);
+            padding-top: 2vh;
+        }
+        .workexp h1{
+            font-family: "Raleway",serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        .PHOTOGRAPHER {
+            font-family: "Raleway", serif;
+            font-weight: normal;
+            margin-left: 16vh; margin-right: 20vh; margin-top: 2vh;
+            float: left;
+            font-size: 1.2rem;
+        }
+        .Extension{
+            font-family: "Raleway", serif;
+            font-weight: normal;
+            margin-left: 90vh; margin-top: 2vh;
+            font-size: 1.2rem;
+        }
+        .GCLASSDRK{
+            margin-left: 102vh; margin-top: 3.5vh;
+            width: 25vh;
+            filter: drop-shadow(0px 0px 6px #403f3f88);
+        }
+        .FBFRAME{
+            margin-top: -21.5vh; margin-left: 5vh;
+            border-radius: 2vh;
+            filter: drop-shadow(0px 0px 6px #403f3f88);
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        
+        <div class="TOPPAGE">
+            <img class ="PROFILEPIC" src="https://lh3.googleusercontent.com/d/1PqKIQ4LJnxRvExaIjDr8eAlheoRxCiBG=w1000?authuser=0">
+            <div class="PROFILE">
+                <h2 class="Raleway">Jeremiah <b>Lirag</b></h2>
+                <br>
+                <br>
+                <article class="Raleway">Bachelor Of Science In Information Technology</article>
+            </div>
+
+            <div class="BASICINFOREC">
+                <h1 class="Raleway">Basic <b>Information</b></h1>
+                <br>
+                <article class="Raleway">
+                    <p><b>FULL NAME:</b> Jeremiah Martin D. Lirag.</p> 
+                    <p><b>ADDRESS:</b> Corner J. Miranda, Taal Avenue Concepcion Pequena Naga City</p>
+                    <p><b>Mobile No.</b> 09998576839</p>
+                    <p><b>Email: </b><a href="mailto: Jmlirag@gbox.adnu.edu.ph">Jmlirag@gbox.adnu.edu.ph </a></p>
+                </article>
+            </div>
+
+            <div class="Statement">
+                <h1 class="Raleway">PERSONAL STATEMENT</h1>
+                <article class="Raleway">
+                    My interest in computers and modern technology, led me to the field Information Technology. I focus on designing websites and UI/UX, and also hardware maintenance. 
+                    I am not so good in backend systems, but I am still building and improving on my skills. I built small projects with other people, mostly personal projects.
+                    I prefer to work with a team in a project, as I can contirbute and recieve ideas.
+                </article>
+            </div>
+        </div>
+
+        <div class="BOTTOMPAGE">
+            <div class="EDUCBG">
+                <h1>Educational <b>Background</b></h1>
+                <div class="SJS">
+                <img class="sjslogo" src="https://lh3.googleusercontent.com/d/1aPnMzkjpNb65aVviSZ1OcgBSAenlSKjE=w1000?authuser=0">
+                </div>
+                <div class="ADNU">
+                <img class="adnulogo" src="https://upload.wikimedia.org/wikipedia/en/e/e2/Ateneo_de_Naga_University_logo.png">
+                </div>
+                
+                
+                <div class="table">
+                    <table style="width: 100%;">
+                        <tr>
+                          <th>General Skills</th>
+                          <th>Technical Skills</th>
+                        </tr>
+                        <tr>
+                          <td>Communcation</td>
+                          <td>UI/UX</td>
+                        </tr>
+                        <tr>
+                            <td>Problem Solving</td>
+                            <td>Hardware Maintenance</td>
+                        </tr>
+                        <tr>
+                            <td>Time Management</td>
+                            <td>Computer Networking</td>
+                        </tr>
+                    </table>                      
+                </div>
+            </div>
+
+            <div class="Forcecontainer">
+                <img class="Forcepfp" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/456160738_3736893706569053_1166451567071235226_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=SwR2dOnvkmoQ7kNvgFGgGy5&_nc_oc=Adg6blOZQEpEdKKaXUhJSb0cYvOn9TeNW6-oPJzFCJJgPZb5jFe9q41dNOdWlV58M8w&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=AmmBE7lqQZQH7cvK6RCdIhI&oh=00_AYDxvTuo6P9PQ5i12c_7-K2Lzr0lw7rle3CcTlPuBmDNFA&oe=67B09ED8">
+                <h1>Character <b>References</b></h1>
+                <p><b>Name:</b> Force Ivan Angelo V. Macapagal</p>
+                <p><b>Course:</b> 2nd Year Digital Illustration And Animation</p>
+                <p><b>Contact Number:</b> 09946738165</p>
+                <p><b>Email: </b><a href="mailto: fmac@gbox.adnu.edu.ph">fmac@gbox.adnu.edu.ph </a></p>
+            </div>
+
+        </div>
+        <div class="DOWNPAGE">
+            <div class="workexp">
+                <h1><b>Projects</b> & <b>Experience</b></h1>
+                <p class="PHOTOGRAPHER">Freelance Photographer (Events)</p>
+                <p class="Extension">Classroom Dark Extension (Bug Fix In UI)</p>
+                <a href="https://github.com/RyanLua/ClassroomDarkMode" target="_blank"><img class="GCLASSDRK" src="https://raw.githubusercontent.com/J3sterlir/ClassroomDarkMode/51818cd8c75a3725a46275176e2af11457c27a95/assets/Logo.svg"></a>
+            
+                <iframe class="FBFRAME" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61550747054132&tabs&width=450&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+            </div>
+
+            <div class="LINKRECT">
+                <a href="https://www.facebook.com/profile.php?id=61550747054132" target="_blank"><img class="Facebooklogo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"></a>
+                <a href="https://www.instagram.com/jm.lirg/" target="_blank"><img class="instagramlogo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"></a>
+                <a href="https://unsplash.com/@j3st_911" target="_blank"><img class="unsplashlogo" src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png"></a>
+                <a href="https://github.com/J3sterlir" target="_blank"><img class="githublogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1024px-GitHub_Invertocat_Logo.svg.png"></a>
+                <a href="https://www.linkedin.com/in/jeremiah-martin-lirag-b0a97a128/" target="_blank"><img class="linkedinlogo" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"></a>
+            </div>
+        </div>
+    </body>
+
+</html>
