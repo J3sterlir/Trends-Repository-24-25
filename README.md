@@ -1,4 +1,4 @@
 PrelimExam_Lirag
 Online Resume
 
-https://j3sterlir.github.io
+DEPLOYED WEBSITE: https://j3sterlir.github.io
